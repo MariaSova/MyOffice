@@ -1,0 +1,17 @@
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col-12 {
+  margin-left: rem(270px);
+}
+
+.logo__footer-astra {
+  margin-left: rem(250px);
+}
+
+.footer__item {
+  margin-right: rem(30px);
+}
