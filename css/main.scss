@@ -1,0 +1,25 @@
+$containerWidth: 1280px;
+$baseFontSize: 21px;
+
+//colors 
+
+$black: #1b252c;
+
+@import "./components/media.scss";
+
+//normalize 
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+//setups
+@import url("https://fonts.googleapis.com/css2?family=Helvetica:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+@import "./layout.scss";
+
+
+@import "./components/hero.scss";
+@import "./components/header.scss";
+@import "./components/footer.scss";
+@import "./components/office.scss";
+@import "./components/facts.scss";
+@import "./components/organization.scss";
+
+
