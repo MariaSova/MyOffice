@@ -1,0 +1,149 @@
+.facts {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: rem(100px);
+}
+
+.fact__column {
+    display: flex;
+    flex-direction: column;
+    
+}
+.facts__title {
+    font-size: rem(36px);
+    margin-bottom: rem(32px);
+    margin-left: rem(20px);
+}
+
+.facts__numbers { 
+    margin-bottom: rem(74px);
+} 
+
+.facts__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: rem(250px);
+}
+
+.block__number {
+    display: flex;
+    align-items: center;
+}
+.block__bold {
+    font-size: rem(28px);
+    font-weight: bold;
+    margin-bottom: rem(22px);
+}
+
+.block__text {
+    margin-right: rem(50px);
+}
+
+
+.block__num { 
+    font-size: rem(72px);
+    font-weight: bold;
+    margin-right: rem(15px);
+}
+.block__image {
+    margin-bottom: rem(20px);
+}
+
+.facts__numbers {
+    display: flex;
+}
+.facts__group {
+    display: flex;
+}
+
+.facts__group-number {
+    margin-right: rem(33px);
+}
+.facts__group-text {
+    width: rem(300px);
+    height: rem(50px);
+}
+
+
+
+
+
+
+
+.fact__column-two {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    color: #fff;
+
+    left: 0;
+}
+
+.fact__bg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fact__bg-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    padding: rem(30px) rem(40px) rem(16px) rem(40px);
+}
+
+.fact__content {
+    margin-bottom: rem(22px);
+}
+.fact__content-two {
+    margin-bottom: rem(32px);
+}
+.fact__content-three {
+    margin-bottom: rem(55px);
+}
+
+.fact__title {
+    font-size: rem(36px);
+    line-height: rem(41px);
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: rem(16px);
+}
+
+.fact__percent {
+    display: flex;
+    font-weight: bold;
+    font-size: rem(72px);
+    align-items: center;
+}
+
+.percent__style {
+    font-size: rem(54px);
+}
+
+.percent__second {
+    font-size: rem(36px);
+}
+
+.percent__third {
+    font-size: rem(24px);
+}
+
+.fact__second {
+    font-size: rem(54px);
+}
+
+.fact__third {
+    font-size: rem(36px);
+}
+
+.fact__name {
+    font-size: rem(30px);
+    font-weight: bold;
+}
+
