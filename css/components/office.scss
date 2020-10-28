@@ -1,0 +1,23 @@
+.office {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: rem(80px);
+}
+
+.office__title {
+    color: #1C9EFF;
+    font-size: rem(45px);
+    line-height: rem(45px);
+}
+
+.office__text {
+    font-size: rem(30px);
+    line-height: rem(45px);
+    margin-bottom: rem(40px);
+}
+
+.office__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
