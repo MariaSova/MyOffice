@@ -2,6 +2,25 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: rem(100px);
+
+    @include tablets {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: rem(50px);
+    }
+
+    @include phones {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: rem(50px);
+        
+    }
 }
 
 .fact__column {
@@ -13,10 +32,35 @@
     font-size: rem(36px);
     margin-bottom: rem(32px);
     margin-left: rem(20px);
+
+    @include tablets {
+        margin-bottom: rem(20px);
+    }
+
+    @include phones {
+        margin-bottom: rem(20px);
+    }
+
 }
 
 .facts__numbers { 
     margin-bottom: rem(74px);
+
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: rem(40px);
+    }
+
+    @include phones {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: rem(20px);
+    }
 } 
 
 .facts__block {
@@ -24,7 +68,7 @@
     flex-direction: column;
     justify-content: center;
     
-    width: rem(250px);
+    min-width: rem(250px);
 }
 
 .block__number {
@@ -46,6 +90,15 @@
     font-size: rem(72px);
     font-weight: bold;
     margin-right: rem(15px);
+
+    @include tablets {
+        font-size: rem(48px);
+    }
+
+    @include phones {
+        font-size: rem(38px);
+    }
+    
 }
 .block__image {
     margin-bottom: rem(20px);
@@ -56,6 +109,23 @@
 }
 .facts__group {
     display: flex;
+
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: rem(40px);
+    }
+
+    @include phones {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: rem(30px);
+    }
+
 }
 
 .facts__group-number {
@@ -95,16 +165,42 @@
     bottom: 0;
     top: 0;
     padding: rem(30px) rem(40px) rem(16px) rem(40px);
+
+    
 }
 
 .fact__content {
     margin-bottom: rem(22px);
+
+    @include tablets {
+        margin-bottom: rem(19px);
+    }
+
+    @include phones {
+        margin-bottom: rem(10px);
+    }
 }
 .fact__content-two {
     margin-bottom: rem(32px);
+
+    @include tablets {
+        margin-bottom: rem(20px);
+    }
+
+    @include phones {
+        margin-bottom: rem(10px);
+    }
 }
 .fact__content-three {
     margin-bottom: rem(55px);
+
+    @include tablets {
+        margin-bottom: rem(40px);
+    }
+
+    @include phones {
+        margin-bottom: rem(20px);
+    }
 }
 
 .fact__title {
@@ -113,6 +209,8 @@
     font-weight: bold;
     color: #fff;
     margin-bottom: rem(16px);
+
+    
 }
 
 .fact__percent {

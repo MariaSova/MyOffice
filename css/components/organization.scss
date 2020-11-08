@@ -9,20 +9,64 @@
     margin-bottom: rem(52px);
     justify-content: space-between;
 
-    &:last-child {
-        margin-bottom: 0;
+
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 95%;
+
+    }
+
+    @include phones {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 95%;
     }
 }
 
-.group-second {
+.organization__group-second {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: rem(76px);
+
+    @include tablets {
+        display: flex;
+
+        width: 95%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    @include phones {
+        display: flex;
+        
+        width: 95%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }
 
 .organization__block-first {
     display: flex;
     flex-direction: column;
-    width: rem(700px);
+    max-width: rem(700px);
     margin-right: rem(70px);
+
+    @include tablets {
+        width: 95%;
+        margin-right: rem(30px);
+
+    }
+
+    @include phones {
+        width: 95%;
+        margin-right: rem(20px);
+    }
+
 }
 .organization__block {
     display: flex;
@@ -53,6 +97,27 @@
     }
 }
 
+.organization__group-third {
+    display: flex;
+    justify-content: space-between;
+
+
+    @include tablets {
+        display: flex;
+
+        width: 95%;
+        flex-wrap: wrap;
+    
+    }
+
+    @include phones {
+        display: flex;
+        
+        width: 95%;
+        flex-wrap: wrap;
+        
+    }
+}
 
 .org__pic {
     margin-bottom: rem(26px);
@@ -70,7 +135,7 @@
 }
 .org__text2 {
     font-size: rem(18px);
-    width: rem(170px);
+    max-width: rem(170px);
 }
 
 .org__group {
@@ -84,3 +149,4 @@
         margin-right: 0;
     }
 }
+

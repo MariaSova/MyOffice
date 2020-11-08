@@ -12,15 +12,41 @@
     position: relative;
     overflow: hidden;
 
+    @include tablets {
+        min-height: rem(600px);
+        margin-top: rem(85px);
+        margin-bottom: rem(50px);
+        display: flex;
+        flex: 1;
+    }
+
+    @include phones {
+        min-height: rem(600px);
+        margin-top: rem(50px);
+        margin-bottom: rem(50px);
+        display: flex;
+        flex: 1;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
 }
 
 
 .hero__container {
     display: flex;
     flex-direction: column;
+
+    @include phones {
+        min-height: rem(300px);
+        margin-top: rem(60px);
+        
+    }
 }
 
 .hero__container2 {
+    display: flex;
+    flex-direction: column;
     margin-bottom: rem(75px);
 }
 
@@ -30,6 +56,12 @@
     align-items: center;
 
     min-width: rem(550px);
+
+    @include phones {
+        display: flex;
+        flex: 1;
+        min-width: rem(0px);
+    }
 }
 
 
@@ -58,18 +90,36 @@
     overflow: hidden;
     position: relative;
     background: #EBEBEB;
-    padding: rem(27px) rem(17px) rem(26px) rem(30px);
+    padding: rem(26px) rem(20px) rem(26px) rem(20px);
     margin-bottom: rem(40px);
 
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @include phones {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .hero__player-video {
-    width: 60%;
+    display: flex;
+    flex: 1;
     margin-right: rem(32px);
+
+    @include phones {
+        display: flex;
+        min-height: rem(300px);
+    }
 }
 
 .hero__player-content {
-    width: 34%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-width: rem(300px);
     margin-top: rem(13px);
     line-height: rem(21px);
 }
@@ -78,22 +128,20 @@
     margin-bottom: rem(20px);
 }
 
-.hero__content {
-    display: flex;
-    flex-direction: column;
-    margin-left: rem(30px);
-    margin-right: rem(30px);
-}
 
-.hero__list {
-    margin-bottom: rem(10px);
-}
 
 .picture {
     overflow: hidden;
     transform: translateX(-100px);
     max-width: rem(574px);
-   
+
+    @include tablets {
+        display: none;
+    }
+
+    @include phones {
+        display: none;
+    }
 
 }
 
@@ -101,5 +149,12 @@
     overflow: hidden;
     transform: translateX(100px);
     max-width: rem(612px);
-    
+
+    @include tablets {
+        display: none;
+    }
+
+    @include phones {
+        display: none;
+    }
 }
